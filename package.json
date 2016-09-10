@@ -1,0 +1,52 @@
+{
+  "name": "splash-suite",
+  "version": "0.0.1",
+  "description": "This template is a starting point for building apps using a drawer-based layout.  The layout is provided by `app-layout` elements.",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel ./**/*.es6  --out-dir .  -w -s --presets es2015"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdlx/splash-suite.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devdlx/splash-suite/issues"
+  },
+  "homepage": "https://github.com/devdlx/splash-suite#readme",
+  "dependencies": {
+    "async": "^0.9.0",
+    "babelify": "^7.3.0",
+    "bower": "^1.4.1",
+    "browser-sync": "^1.3.0",
+    "del": "^0.1.2",
+    "express": "^4.13.4",
+    "firebase": "^3.0.2",
+    "firebase-tools": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^0.5.3",
+    "merge-stream": "^0.1.6",
+    "mkdirp": "^0.5.0",
+    "parse-server": "^2.2.16",
+    "polybuild": "^1.0.3",
+    "run-sequence": "^0.3.6",
+    "superstatic": "^2.0.2",
+    "through2": "^0.6.3",
+    "through2-asyncmap": "^1.1.0",
+    "through2-concurrent": "^1.0.0",
+    "through2-filter": "^1.4.1",
+    "through2-map": "^1.4.0",
+    "through2-reduce": "^0.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-fs": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0",
+    "web-component-tester": "^2.2.3"
+  }
+}
