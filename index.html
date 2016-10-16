@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+
+<base href=" http://192.168.0.7:8080"></base>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-    <title>Splash-Music</title>
+    <title>Splash-Suite-Polymer</title>
 
     <link rel="shortcut icon" sizes="32x32" href="/images/app-icon-32.png">
 
@@ -21,10 +24,24 @@
             line-height: 1.5;
             min-height: 100vh;
         }
+
+        .splash{
+            background: rgb(13, 169, 222);
+             min-height: 100vh;
+             display: flex;
+  align-items: center;
+  justify-content: center;
+        }
+
+        .splash .text {
+            color: white;
+            font-size: 40px;
+      
+        }
     </style>
 
-    <link rel="import" href="src/splash.html" inline>
-    <link rel="import" href="src/dlx-music.html" async>
+
+<link rel="import" href="src/splash-suite/splash-suite.html" async>
 
 </head>
 
@@ -33,10 +50,12 @@
     <splash-up>
 
         <div class="splash">
-            dlx-suite-app
+           <div class="text">
+                splash-suite-app
+           </div>
         </div>
 
-        <dlx-music-app class="content"></dlx-music-app>
+        <splash-suite-app class="content"></splash-suite-app>
 
     </splash-up>
 

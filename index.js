@@ -38,4 +38,3 @@ var Polymer = {
         }, 3000);
     });
 })();
-//# sourceMappingURL=index.js.map
