@@ -3,7 +3,6 @@
 
 <head>
 
-<base href=" http://192.168.0.7:8080"></base>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
@@ -14,7 +13,8 @@
 
     <meta name="theme-color" content="#fff">
     <link rel="manifest" href="/manifest.json">
-
+    <link rel="stylesheet" type="text/css" href="/animate.css">
+    
     <style>
         @charset "UTF-8";
         body {
@@ -24,19 +24,29 @@
             line-height: 1.5;
             min-height: 100vh;
         }
-
+        
         .splash{
             background: rgb(13, 169, 222);
-             min-height: 100vh;
-             display: flex;
-  align-items: center;
-  justify-content: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity:1;
+
+            position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
         }
 
         .splash .text {
             color: white;
             font-size: 40px;
-      
+        }
+
+        .splash .text, .content{
+            opacity:0;
         }
     </style>
 
@@ -46,18 +56,12 @@
 </head>
 
 <body>
-
-    <splash-up>
-
-        <div class="splash">
-           <div class="text">
-                splash-suite-app
-           </div>
+    <div class="splash animated">
+        <div class="text animated ">
+            splash-suite-app
         </div>
-
-        <splash-suite-app class="content"></splash-suite-app>
-
-    </splash-up>
+    </div>
+     <splash-suite-app class="content animated"></splash-suite-app>
 
     <script src="./index.js" charset="utf-8" inline></script>
 

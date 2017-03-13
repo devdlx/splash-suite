@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel ./src/**.es6  --out-dir build  -w -s --presets es2015"
+    "dev": "babel ./src/**.es6  --out-dir build  -w -s --presets es2015",
+    "start":"polymer serve"
   },
   "repository": {
     "type": "git",

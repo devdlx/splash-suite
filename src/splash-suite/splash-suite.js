@@ -1,9 +1,9 @@
 (function() {
 
-    // #web-shell
+    // #splash-suite-app
     let MyBehavior = {};
 
-    class webShell {
+    class splashSuiteApp {
 
         // Define behaviors with a getter.
         // get behaviors() {
@@ -12,7 +12,7 @@
 
         // Element setup goes in beforeRegister instead of createdCallback.
         beforeRegister() {
-            this.is = 'web-shell';
+            this.is = 'splash-suite-app';
             // Define the properties object in beforeRegister.
             this.properties = {
 
@@ -371,5 +371,5 @@
     }
 
     // Register the element using Polymer's constructor.
-    Polymer(webShell);
+    Polymer(splashSuiteApp);
 })();
